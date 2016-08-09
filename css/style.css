@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "doctorWho";
+    src: url("../fonts/doctorWho.ttf");
+}
+.html, body{
+	background-color: blue;
+}
+body{
+	background-image: url("../images/vortex.jpg");
+}
+.container{
+	border-style: dashed;
+	border-width: 1px;
+	border-color: white;
+	width: 58%;
+	height: 450px;
+	color: white;
+	margin: auto;
+	font-family: "oswald";
+	text-shadow: 5px 5px black;
+}
+.top-logo{
+	margin:0 0 10px 0;
+}
+.top-font{
+	font-family: "doctorWho";
+	font-size: 128px;
+	color: white;	
+	text-align: center;
+	text-shadow: 10px 10px black;
+}
+.doctor-who-image{
+	float: left;
+	width: 25%;
+	margin: 10px 10px 10px 50px;
+}
+.press-any{
+	float: left;
+	width: 30%;
+	margin: 75px 0 0 125px;
+}
