@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
     <title>Doctor Who Hangman</title>
 </head>
 
@@ -28,11 +29,10 @@
                             <img src="images/dalek.jpg">
                         </div>
                         <div class="col-sm-12">
-                            <div class="begin">
-                                <p>
-                                    <h3>Press any letter to start!</h3></p>
-                            </div>
+                            <div id="start"><h3>Press any letter!</h3></div>
+                            <div id="words"></div>
                             <div id="game"></div>
+                            <div id="game-header"></div>
                             <div id="counter"></div>
                         </div>
                     </div>

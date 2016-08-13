@@ -1,20 +1,17 @@
-// Sets the Starting Word
-var wordList = ['hartnell', 'troughton', 'pertwee', 'tbaker', 'davison', 'cbaker', 'mccoy',
-    'mcgann', 'ereccleston', 'tennant', 'smith', 'capaldi'
-]
 
-// This sets the starting word randomly.
-function startingWord(word){
-var rand = wordList[Math.floor(Math.random() * wordList.length)];
-}
+    var wordList = ['HARTNELL', 'TROUGHTON', 'PERTWEE', 'TBAKER', 'DAVISON', 'CBAKER', 'MCCOY',
+        'MCGANN', 'ERECCLESTON', 'TENNANT', 'SMITH', 'CAPALDI'];
+    var wins = 0;
+    var guessesLeft = 15;
+    
+    var words = wordList[Math.floor(Math.random()*wordList.length)];
+    document.querySelector('#words').innerHTML = words;
 
-// Wins, Losses, and Guesses left
-var wins = 0;
-var guessesLeft = 10;
 
 // When the user presses the key it records the keypress and then sets it to letterGuessed
 document.onkeyup = function(event) {
-    var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
+
+    var letterGuessed = String.fromCharCode(event.keyCode).toUpperCase();
     showToPage(letterGuessed);
 
     // Places the selecgted letters into the game
@@ -26,17 +23,17 @@ document.onkeyup = function(event) {
         guessesLeft--;
     }
 
-    
     if (guessesLeft === 0) {
         alert("Exterminate!")
         location.reload();
     }
 
     // Taking the tallies and displaying them in HTML
-    var html = "<h3><p>Wins: " + wins + "</p>" +
+    var counter = "<h3><p>Wins: " + wins + "</p>" +
+    "<p>Guesses Left: " + guessesLeft + "</p></h3>";
+    document.querySelector('#counter').innerHTML = counter;
 
-        "<p>Guesses Left: " + guessesLeft + "</p></h3>";
-
-    document.querySelector('#counter').innerHTML = html;
+    var letterGuessedHeader = "<h3>Last letter guessed:</h3>";
+    document.querySelector('#game-header').innerHTML = letterGuessedHeader;
 
 }
