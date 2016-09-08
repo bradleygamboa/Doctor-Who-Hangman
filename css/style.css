@@ -16,7 +16,7 @@ body {
     border-width: 1px;
     border-color: white;
     width: 58%;
-    height: 550px;
+    height: 600px;
     color: white;
     margin: auto;
     margin-top: 25px;
@@ -31,5 +31,14 @@ body {
     text-shadow: 5px 5px black;
     line-height: 100px;
     margin: 10px 0 0 0;
+}
+.counter{
+    float: right;
+}
+.wrong{
+    float: left;
+}
+.soundPlayer{
+    display: none;
 }
 

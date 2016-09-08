@@ -2,8 +2,9 @@
 //---------------------------------
 
 //Arrays and Variables for holding data
-	var wordOptions = ['hartnell', 'troughton', 'pertwee', 'tbaker', 'davison', 'cbaker', 'mccoy',
-	'mcgann', 'ereccleston', 'tennant', 'smith', 'capaldi'];
+	var wordOptions = ['tardis', 'doctorwho', 'rose', 'jack', 'tennant', 'smith', 'amy',
+	'rory', 'river', 'daleks', 'sontarin', 'cybermen', 'master', 'mickey', 'donna',
+	'mickey', 'martha', 'time'];
 	var selectedWord = "";
 	var lettersInWords = [];
 	var numBlanks = 0;
@@ -39,12 +40,6 @@ function startGame (){
 	document.getElementById('winCounter').innerHTML = winCount;
 	document.getElementById('lossCounter').innerHTML = lossCount;
 
-	//testing 
-	console.log(selectedWord);
-	console.log(lettersInWords);
-	console.log(numBlanks);
-	console.log(blanksAndSuccesses);
-
 }
 
 function checkLetters(letter){
@@ -69,11 +64,10 @@ else {
 	wrongLetters.push(letter);
 	guessesLeft--
 }
-	console.log(blanksAndSuccesses);
+
 }
 
 function roundComplete(){
-	console.log("Win Count: " + winCount + " | Loss Count: " + lossCount + " | Guesses Left: " + guessesLeft);
 
 	//update HTML in real time
 		document.getElementById('numGuesses').innerHTML = guessesLeft;
@@ -113,8 +107,5 @@ startGame();
 		var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
 		checkLetters(letterGuessed);
 		roundComplete();
-
-		//testing
-		console.log(letterGuessed);
 
 	}

@@ -17,27 +17,37 @@
     <div class="container">
         <div class="top-font">Doctor Who Hangman</div>
             <center><h4>Do you have what it takes to defeat the Daleks?</h4>
+            <img src="images/dalek.jpg">
         
         <div class="words">
             <h3 class="wordsTitle">Press any letter to start</h3>
             <h2 id="wordToGuess"></h2>
         </div>
         <div class="wrong">
-            Wrong Guessed: <span id="wrongGuesses"></span>
+            <h4>Wrong Guessed: <span id="wrongGuesses"></span></h4>
         </div>
+        
+        <div class = counter>
         <div class="guesses">
-            Guesses Left: <span id="numGuesses"></span>
+            <h4>Guesses Left: <span id="numGuesses"></span></h4>
         </div>
         <div class="wins">
-            Win Counter: <span id="winCounter"></span>
+            <h4>Win Counter: <span id="winCounter"></span></h4>
         </div>
         <div class="losses">
-            Loss Counter: <span id="lossCounter"></span>
+           <h4>Loss Counter: <span id="lossCounter"></span></h4>
         </div></center>
+        </div>
         <!--End of Container-->
     </div>
     <!--Link to javascript-->
-    <script src="logic.js"></script>
+    <script src="javascript/logic.js"></script>
+        <div class="soundPlayer">
+        <audio controls autoplay loop>
+            <source src="https://archive.org/download/DoctorWhoTheme_306/DoctorWhoTheme-11thDoctor.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
 </body>
 
 </html>
