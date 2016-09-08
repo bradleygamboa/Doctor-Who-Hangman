@@ -11,40 +11,18 @@ body {
 body {
     background-image: url("../images/vortex.jpg");
 }
-#words{
-    font-size: 32px;
-}
-#game-header {
-    float: left;
-    margin: 5px 0 0 0;
-}
-
-#game {
-    float: left;
-    margin: 60px 0 0 50px;
-}
-
-#counter{
-	float: right;
-	margin: 10px 20px 0 0;
-}
-
 .container {
     border-style: dashed;
     border-width: 1px;
     border-color: white;
     width: 58%;
-    height: 450px;
+    height: 550px;
     color: white;
     margin: auto;
+    margin-top: 25px;
     font-family: "oswald";
     text-shadow: 2px 2px black;
 }
-
-.top-logo {
-    margin: 0 0 10px 0;
-}
-
 .top-font {
     font-family: "doctorWho";
     font-size: 128px;
@@ -55,15 +33,3 @@ body {
     margin: 10px 0 0 0;
 }
 
-
-}
-.doctor-who-image {
-    float: left;
-    width: 25%;
-    margin: 10px 10px 10px 50px;
-}
-.press-any {
-    float: left;
-    width: 30%;
-    margin: 75px 0 0 125px;
-}

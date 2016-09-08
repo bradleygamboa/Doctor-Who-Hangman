@@ -4,7 +4,9 @@
     var wins = 0;
     var guessesLeft = 15;
     
-    var words = wordList[Math.floor(Math.random()*wordList.length)];
+    var chosenWord = wordList[Math.floor(Math.random() * wordList.length)];
+    var lettersInChosenWord = chosenWord.split("");
+    var numBlanks = lettersInChosenWord.length; 
     document.querySelector('#words').innerHTML = words;
 
 

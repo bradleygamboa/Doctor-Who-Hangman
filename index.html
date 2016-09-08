@@ -9,39 +9,35 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-     <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
     <title>Doctor Who Hangman</title>
 </head>
 
 <body>
-    <div class="top-font">
-        DOCTOR WHO
-        <br>Hangman
-    </div>
     <div class="container">
-        <center>
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1>Do you have what it takes to defeat the Daleks!?</h1>
-                    <hr>
-                    <div class="row">
-                        <div class="dalek">
-                            <img src="images/dalek.jpg">
-                        </div>
-                        <div class="col-sm-12">
-                            <div id="start"><h3>Press any letter!</h3></div>
-                            <div id="words"></div>
-                            <div id="game"></div>
-                            <div id="game-header"></div>
-                            <div id="counter"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="top-font">Doctor Who Hangman</div>
+            <center><h4>Do you have what it takes to defeat the Daleks?</h4>
+        
+        <div class="words">
+            <h3 class="wordsTitle">Press any letter to start</h3>
+            <h2 id="wordToGuess"></h2>
+        </div>
+        <div class="wrong">
+            Wrong Guessed: <span id="wrongGuesses"></span>
+        </div>
+        <div class="guesses">
+            Guesses Left: <span id="numGuesses"></span>
+        </div>
+        <div class="wins">
+            Win Counter: <span id="winCounter"></span>
+        </div>
+        <div class="losses">
+            Loss Counter: <span id="lossCounter"></span>
+        </div></center>
+        <!--End of Container-->
     </div>
-    </center>
-    <script src='javascript/game.js'></script>
-    </script>
+    <!--Link to javascript-->
+    <script src="logic.js"></script>
 </body>
 
 </html>
